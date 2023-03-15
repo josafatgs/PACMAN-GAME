@@ -1,0 +1,31 @@
+begin
+	open = [start]
+	closed = []
+	while open != [] do
+		begin
+			remove the leftmost state from open, call it X
+			if X = goal then return the path from Start to X
+			else begin
+				generate children of X
+					for each child of X do
+						case
+							the child is not open or closed://When the node has been checkedbefore
+								begin
+									assign the child a heuristic value;
+									add the child to open
+								end;
+								
+							the child is already on open;
+								if the child was reacher by a shorter path
+								then give the state on open the shorter path
+							the child is alreadu on closed;
+								if the child was reached by a shorther path then
+									begin
+										remove the state from closed;
+										add the child to open
+									end;
+				 end;
+				 put X on closed;
+				 re-order states on open by heuristic merit(best leftmost).
+				end; 
+				
