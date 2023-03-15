@@ -1,6 +1,6 @@
 /bin
 /obj
-!Algorithms Search
-.cbp
-.depend
-.layout
+Algorithms\ Search 
+*.cbp
+*.depend
+*.layout
