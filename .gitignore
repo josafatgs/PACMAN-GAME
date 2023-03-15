@@ -1,0 +1,6 @@
+/bin
+/obj
+!Algorithms Search
+.cbp
+.depend
+.layout
